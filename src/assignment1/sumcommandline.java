@@ -2,11 +2,11 @@ package assignment1;
 
 public class sumcommandline {
 	
-	public static void main(String args[]) {
+	public static void main(String[] values) {
 	int sum=0;
-		int x = Integer.parseInt(args[0]);
-		int y =	Integer.parseInt(args[1]);
-		sum = x+y;
+	for(int i=0;i<values.length;i++) {
+		sum += Integer.parseInt(values[i]);
+	}
 		System.out.println(sum);
 		}
 }
